@@ -72,13 +72,9 @@ Production-grade async-native framework for RAG, agents, and graph workflows.
 
 <img src="https://img.shields.io/badge/🧠_COMMUNITY-22c55e?style=for-the-badge" />
 
-### [Engineers of AI](https://github.com/engineersofai)
+### [Engineers of AI](https://www.engineersofai.com)
 
-Building a community of engineers who ship AI products — not just prototypes.
-
-Tutorials, open-source tools, and real-world patterns for production AI.
-
-[![Follow](https://img.shields.io/github/followers/engineersofai?label=Follow&style=flat-square&color=22c55e)](https://github.com/engineersofai)
+[![Website](https://img.shields.io/badge/www.engineersofai.com-22c55e?style=flat-square&logo=safari&logoColor=white)](https://www.engineersofai.com)
 
 </td>
 </tr>
