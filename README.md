@@ -10,13 +10,13 @@
 <br/>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/ML_Engineer-0d1117?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM1OGE2ZmYiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggZD0iTTEyIDJMMiA3bDEwIDUgMTAtNS0xMC01eiIvPjxwYXRoIGQ9Ik0yIDE3bDEwIDUgMTAtNSIvPjxwYXRoIGQ9Ik0yIDEybDEwIDUgMTAtNSIvPjwvc3ZnPg==&logoColor=58A6FF"/>
-  <img src="https://img.shields.io/badge/ML_Engineer-f6f8fa?style=for-the-badge&logoColor=0a7bbd"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Senior_AI_Specialist-0d1117?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM1OGE2ZmYiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggZD0iTTEyIDJMMiA3bDEwIDUgMTAtNS0xMC01eiIvPjxwYXRoIGQ9Ik0yIDE3bDEwIDUgMTAtNSIvPjxwYXRoIGQ9Ik0yIDEybDEwIDUgMTAtNSIvPjwvc3ZnPg==&logoColor=58A6FF"/>
+  <img src="https://img.shields.io/badge/Senior_AI_Specialist-f6f8fa?style=for-the-badge&logoColor=0a7bbd"/>
 </picture>
 &nbsp;
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Open_Source_Builder-0d1117?style=for-the-badge&logo=opensourceinitiative&logoColor=58A6FF"/>
-  <img src="https://img.shields.io/badge/Open_Source_Builder-f6f8fa?style=for-the-badge&logo=opensourceinitiative&logoColor=0a7bbd"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Technical_PM-0d1117?style=for-the-badge&logo=opensourceinitiative&logoColor=58A6FF"/>
+  <img src="https://img.shields.io/badge/Technical_PM-f6f8fa?style=for-the-badge&logo=opensourceinitiative&logoColor=0a7bbd"/>
 </picture>
 &nbsp;
 <picture>
@@ -33,7 +33,7 @@
 ```python
 class Engineer:
     def __init__(self):
-        self.role      = "ML Engineer & Open Source Builder"
+        self.role      = "Senior AI Specialist & Technical PM"
         self.focus     = ["LLM Infrastructure", "RAG Systems", "AI Agents"]
         self.building  = "SynapseKit — production-grade LLM framework"
         self.founded   = "Engineers of AI — engineersofai.com"
