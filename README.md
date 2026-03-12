@@ -9,20 +9,11 @@
 
 <br/>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Senior_AI_Specialist-0d1117?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM1OGE2ZmYiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggZD0iTTEyIDJMMiA3bDEwIDUgMTAtNS0xMC01eiIvPjxwYXRoIGQ9Ik0yIDE3bDEwIDUgMTAtNSIvPjxwYXRoIGQ9Ik0yIDEybDEwIDUgMTAtNSIvPjwvc3ZnPg==&logoColor=58A6FF"/>
-  <img src="https://img.shields.io/badge/Senior_AI_Specialist-f6f8fa?style=for-the-badge&logoColor=0a7bbd"/>
-</picture>
+![Senior AI Specialist](https://img.shields.io/badge/Senior_AI_Specialist-0a7bbd?style=for-the-badge&logo=openai&logoColor=white)
 &nbsp;
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Technical_PM-0d1117?style=for-the-badge&logo=opensourceinitiative&logoColor=58A6FF"/>
-  <img src="https://img.shields.io/badge/Technical_PM-f6f8fa?style=for-the-badge&logo=opensourceinitiative&logoColor=0a7bbd"/>
-</picture>
+![Technical Product Manager](https://img.shields.io/badge/Technical_Product_Manager-0a7bbd?style=for-the-badge&logo=target&logoColor=white)
 &nbsp;
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Founder,_Engineers_of_AI-0d1117?style=for-the-badge&logo=databricks&logoColor=58A6FF"/>
-  <img src="https://img.shields.io/badge/Founder,_Engineers_of_AI-f6f8fa?style=for-the-badge&logo=databricks&logoColor=0a7bbd"/>
-</picture>
+![Founder — Engineers of AI](https://img.shields.io/badge/Founder_—_Engineers_of_AI-0a7bbd?style=for-the-badge&logo=rocket&logoColor=white)
 
 </div>
 
@@ -33,7 +24,7 @@
 ```python
 class Engineer:
     def __init__(self):
-        self.role      = "Senior AI Specialist & Technical PM"
+        self.role      = "Senior AI Specialist & Technical Product Manager"
         self.focus     = ["LLM Infrastructure", "RAG Systems", "AI Agents"]
         self.building  = "SynapseKit — production-grade LLM framework"
         self.founded   = "Engineers of AI — engineersofai.com"
