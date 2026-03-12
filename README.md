@@ -4,7 +4,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:0a7bbd&height=220&section=header&text=&fontSize=0" width="100%"/>
 
 <a href="https://github.com/AmitoVrito">
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=30&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=100&lines=Building+the+future+of+AI+infrastructure;One+open-source+project+at+a+time" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=30&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=100&lines=I+build+things+that+ship;and+open+source+them" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -20,8 +20,8 @@
 </picture>
 &nbsp;
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Systems_Thinker-0d1117?style=for-the-badge&logo=databricks&logoColor=58A6FF"/>
-  <img src="https://img.shields.io/badge/Systems_Thinker-f6f8fa?style=for-the-badge&logo=databricks&logoColor=0a7bbd"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Founder,_Engineers_of_AI-0d1117?style=for-the-badge&logo=databricks&logoColor=58A6FF"/>
+  <img src="https://img.shields.io/badge/Founder,_Engineers_of_AI-f6f8fa?style=for-the-badge&logo=databricks&logoColor=0a7bbd"/>
 </picture>
 
 </div>
@@ -36,11 +36,8 @@ class Engineer:
         self.role      = "ML Engineer & Open Source Builder"
         self.focus     = ["LLM Infrastructure", "RAG Systems", "AI Agents"]
         self.building  = "SynapseKit — production-grade LLM framework"
-        self.community = "Engineers of AI"
+        self.founded   = "Engineers of AI — engineersofai.com"
         self.philosophy = "Ship fast. Keep it simple. Open source everything."
-
-    def current_mission(self):
-        return "Making LLM apps as easy to build as CRUD apps"
 ```
 
 <br/>
