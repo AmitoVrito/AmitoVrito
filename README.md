@@ -13,7 +13,7 @@
 &nbsp;
 ![Technical Product Manager](https://img.shields.io/badge/Technical_Product_Manager-0a7bbd?style=for-the-badge&logo=target&logoColor=white)
 &nbsp;
-![Founder — Engineers of AI](https://img.shields.io/badge/Founder_—_Engineers_of_AI-0a7bbd?style=for-the-badge&logo=rocket&logoColor=white)
+![Founder — EngineersOfAI](https://img.shields.io/badge/Founder_—_Engineers_of_AI-0a7bbd?style=for-the-badge&logo=rocket&logoColor=white)
 
 </div>
 
@@ -27,7 +27,7 @@ class Engineer:
         self.role      = "Senior AI Specialist & Technical Product Manager"
         self.focus     = ["LLM Infrastructure", "RAG Systems", "AI Agents"]
         self.building  = "SynapseKit — production-grade LLM framework"
-        self.founded   = "Engineers of AI — engineersofai.com"
+        self.founded   = "EngineersOfAI — engineersofai.com"
         self.philosophy = "Ship fast. Keep it simple. Open source everything."
 ```
 
@@ -60,7 +60,7 @@ Production-grade async-native framework for RAG, agents, and graph workflows.
 
 <img src="https://img.shields.io/badge/🧠_COMMUNITY-22c55e?style=for-the-badge" />
 
-### [Engineers of AI](https://www.engineersofai.com)
+### [EngineersOfAI](https://www.engineersofai.com)
 
 [![Website](https://img.shields.io/badge/www.engineersofai.com-22c55e?style=flat-square&logo=safari&logoColor=white)](https://www.engineersofai.com)
 
