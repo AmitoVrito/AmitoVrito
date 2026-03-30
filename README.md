@@ -1,3 +1,13 @@
+<div align="center">
+
+[![SynapseKit](https://img.shields.io/badge/SynapseKit-0a7bbd?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SynapseKit/SynapseKit)&nbsp;[![Engineers of AI](https://img.shields.io/badge/Engineers_of_AI-22c55e?style=for-the-badge)](https://www.engineersofai.com)&nbsp;[![PyPI](https://img.shields.io/badge/PyPI-3775A9?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/synapsekit/)
+
+<sub>Ship fast. Keep it simple. Open source everything.</sub>
+
+</div>
+
+---
+
 ```
 ┌──────────────────────────────────────────────────────────────────┐
 │  $ ssh git@github.com -p 443                                     │
@@ -291,18 +301,6 @@ nautiverse:~$ cat /etc/community.d/engineers_of_ai.conf
 nautiverse:~$ █
 ```
 
----
-
 <div align="center">
-
-[![SynapseKit](https://img.shields.io/badge/SynapseKit-0a7bbd?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SynapseKit/SynapseKit)&nbsp;[![Engineers of AI](https://img.shields.io/badge/Engineers_of_AI-22c55e?style=for-the-badge)](https://www.engineersofai.com)&nbsp;[![PyPI](https://img.shields.io/badge/PyPI-3775A9?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/synapsekit/)
-
-<br/>
-
-<sub>Ship fast. Keep it simple. Open source everything.</sub>
-
-<br/>
-
 <img src="https://komarev.com/ghpvc/?username=AmitoVrito&style=flat-square&color=0a7bbd&label=profile+views" />
-
 </div>
