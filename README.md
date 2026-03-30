@@ -1,94 +1,99 @@
-<div align="center">
-
-<br/>
-
-![](https://img.shields.io/badge/v2026-actively_shipping-0a7bbd?style=flat-square&labelColor=0d1117)
-&nbsp;
-![](https://img.shields.io/badge/mode-production-22c55e?style=flat-square&labelColor=0d1117)
-
-<br/>
-
-**Senior AI Specialist &nbsp;·&nbsp; Technical Product Manager &nbsp;·&nbsp; Founder**
-
-*I build production infrastructure for AI systems — and open source it.*
-
-<br/>
-
-</div>
-
----
-
-## Flagship — SynapseKit
-
-> The LLM framework that understands your budget, your compliance requirements, and your quality standards — not just your prompts.
-
-Async-native Python framework for RAG pipelines, AI agents, and graph workflows. A serious alternative to LangChain — 2 hard dependencies, no magic, full production stack from day one.
-
 ```
-26 LLM providers  ·  41 tools  ·  17 loaders  ·  1,403 tests  ·  2 hard deps
+┌──────────────────────────────────────────────────────────────────┐
+│  $ ssh git@github.com -p 443                                     │
+│  PTY allocation request failed on channel 0                      │
+│  Hi AmitoVrito! You've successfully authenticated, but           │
+│  GitHub does not provide shell access.                           │
+│                                                                  │
+│  ...unless you know where to look.                               │
+└──────────────────────────────────────────────────────────────────┘
 ```
 
-[![PyPI](https://img.shields.io/pypi/v/synapsekit?color=0a7bbd&label=pypi&logo=pypi&logoColor=white)](https://pypi.org/project/synapsekit/)&nbsp;[![PyPI Downloads](https://static.pepy.tech/personalized-badge/synapsekit?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/synapsekit)&nbsp;[![Stars](https://img.shields.io/github/stars/SynapseKit/SynapseKit?style=flat-square&color=0a7bbd&label=stars)](https://github.com/SynapseKit/SynapseKit)&nbsp;[![Tests](https://img.shields.io/badge/tests-1403_passing-22c55e?logo=pytest&logoColor=white)]()
-
-→ [github.com/SynapseKit/SynapseKit](https://github.com/SynapseKit/SynapseKit)
-→ [synapsekit.github.io/synapsekit-docs](https://synapsekit.github.io/synapsekit-docs/)
-
----
-
-## Focus
-
+```bash
+nautiverse:~$ whoami
 ```
-area                      what i'm building
-─────────────────────────────────────────────────────────────────
-LLM Infrastructure    →   RAG · streaming agents · graph workflows
-Cost intelligence     →   CostRouter · BudgetGuard · FallbackChain
-EU Compliance         →   GDPR toolkit · EU AI Act risk classifier
-Eval-driven dev       →   synapsekit test · EvalCI · regression gates
-Product               →   AI strategy for regulated industries
+```
+AmitoVrito — Senior AI Specialist · Technical PM · Founder
+Building production infrastructure for LLM systems — and open sourcing it.
 ```
 
 ---
 
-## Stack
+```bash
+nautiverse:~$ systemctl status synapsekit --no-pager
+```
+```
+● synapsekit.service — async-native Python LLM framework
+     Loaded: loaded (/usr/local/lib/python3.12/site-packages/synapsekit)
+     Active: ● active (running) since 2024-01-01; 2y 3mo ago
+    Process: ExecStartPre=uv run pytest tests/ -q (code=exited, status=0/OK)
+   Main PID: 1 (python)
 
-```python
+   providers  26  openai · anthropic · ollama · gemini · cohere · mistral
+                  bedrock · azure · groq · deepseek · openrouter · together
+                  fireworks · cerebras · cloudflare · moonshot · perplexity
+                  vertexai · zhipu · ai21 · databricks · baidu · llamacpp
+                  minimax · alephalpha · huggingface
+   tools      41  calculator · python_repl · web_search · sql · http · shell
+                  arxiv · pubmed · wolfram · wikipedia · tavily · brave ...
+   loaders    17  pdf · html · csv · json · yaml · xml · discord · markdown
+                  audio · video · excel · powerpoint · docx · web · dir ...
+   hard deps   2  numpy · rank-bm25
+   test suite  ✓  1403 passing
+```
+
+[![PyPI](https://img.shields.io/pypi/v/synapsekit?color=0a7bbd&label=pypi&logo=pypi&logoColor=white)](https://pypi.org/project/synapsekit/)&nbsp;[![Downloads](https://static.pepy.tech/personalized-badge/synapsekit?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/synapsekit)&nbsp;[![Stars](https://img.shields.io/github/stars/SynapseKit/SynapseKit?style=flat-square&color=0a7bbd&label=stars)](https://github.com/SynapseKit/SynapseKit)&nbsp;[![Tests](https://img.shields.io/badge/tests-1403_passing-22c55e?logo=pytest&logoColor=white)]()
+
+---
+
+```bash
+nautiverse:~$ cat /proc/self/focus
+```
+```
+LLM Infrastructure    →  RAG · streaming agents · graph workflows
+Cost intelligence     →  CostRouter · BudgetGuard · FallbackChain
+EU Compliance         →  GDPR toolkit · EU AI Act risk classifier
+Eval-driven dev       →  EvalCI · regression gates · synapsekit test
+Product               →  AI strategy for regulated industries
+```
+
+---
+
+```bash
+nautiverse:~$ cat stack.json
+```
+```json
 {
-    "languages":      ["Python", "TypeScript", "Scala", "Java"],
-    "ai_ml":          ["PyTorch", "HuggingFace", "OpenAI", "Anthropic"],
-    "infrastructure": ["AWS", "Azure", "Docker", "Kubernetes", "Terraform"],
-    "data":           ["PostgreSQL", "Redis", "Elasticsearch", "Kafka", "Flink"],
+  "languages":      ["Python", "TypeScript", "Scala", "Java"],
+  "ai_ml":          ["PyTorch", "HuggingFace", "OpenAI", "Anthropic"],
+  "infrastructure": ["AWS", "Azure", "Docker", "Kubernetes", "Terraform"],
+  "data":           ["PostgreSQL", "Redis", "Elasticsearch", "Kafka", "Flink"]
 }
 ```
 
 ---
 
-## Changelog
-
+```bash
+nautiverse:~$ git log --oneline --graph --all
 ```
-v2026.1  (now)    SynapseKit v1.5.0 in progress — EU compliance platform,
-                  DataResidency, ConsentManager, EvalCI GitHub Action
+```
+* a1b2c3d  (HEAD -> main, tag: v2026.1)  SynapseKit v1.5.0 — EU compliance WIP
+* 7f8e9ab  (tag: v2026.0)                SynapseKit v1.4.x — 26 providers, 1403 tests
+* 3c4d5e6  (tag: v2025.x)                SynapseKit v1.0→1.3 — cost routing, eval CLI, MCP
+* 1a2b3c4  (tag: v2024.x)                AI infrastructure at fintech & healthcare scale
+```
 
-v2026.0  (Mar)    SynapseKit v1.4.x — HuggingFace, DynamoDB/Memcached caching,
-                  graph versioning + migration chains, DiscordLoader, XMLLoader,
-                  PythonREPL sandbox timeout, Mermaid conditional edges
-                  1,403 tests · 26 providers · 41 tools · 17 loaders
+---
 
-v2025.x           SynapseKit v1.0 → v1.3 — first production release:
-                  cost routing, eval CLI, observability (OTel), MCP support,
-                  multi-agent (Supervisor/Handoff/Crew), A2A protocol, HITL
-
-v2024.x           AI infrastructure at scale across fintech & healthcare
+```bash
+nautiverse:~$ █
 ```
 
 ---
 
 <div align="center">
 
-[![SynapseKit](https://img.shields.io/badge/SynapseKit-0a7bbd?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SynapseKit/SynapseKit)
-&nbsp;
-[![Engineers of AI](https://img.shields.io/badge/Engineers_of_AI-22c55e?style=for-the-badge)](https://www.engineersofai.com)
-&nbsp;
-[![PyPI](https://img.shields.io/badge/PyPI-3775A9?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/synapsekit/)
+[![SynapseKit](https://img.shields.io/badge/SynapseKit-0a7bbd?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SynapseKit/SynapseKit)&nbsp;[![Engineers of AI](https://img.shields.io/badge/Engineers_of_AI-22c55e?style=for-the-badge)](https://www.engineersofai.com)&nbsp;[![PyPI](https://img.shields.io/badge/PyPI-3775A9?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/synapsekit/)
 
 <br/>
 
