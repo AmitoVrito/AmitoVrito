@@ -2,17 +2,13 @@
 
 <br/>
 
-![](https://img.shields.io/badge/Amit_Nautiyal-v2026-0a7bbd?style=flat-square&labelColor=0d1117)
+![](https://img.shields.io/badge/v2026-actively_shipping-0a7bbd?style=flat-square&labelColor=0d1117)
 &nbsp;
-![](https://img.shields.io/badge/status-actively_shipping-22c55e?style=flat-square&labelColor=0d1117)
-&nbsp;
-![](https://img.shields.io/badge/mode-production-58a6ff?style=flat-square&labelColor=0d1117)
+![](https://img.shields.io/badge/mode-production-22c55e?style=flat-square&labelColor=0d1117)
 &nbsp;
 ![](https://img.shields.io/badge/Dresden%2C_Germany-🇩🇪-lightgrey?style=flat-square&labelColor=0d1117)
 
 <br/>
-
-# Amit Nautiyal
 
 **Senior AI Specialist &nbsp;·&nbsp; Technical Product Manager &nbsp;·&nbsp; Founder**
 
