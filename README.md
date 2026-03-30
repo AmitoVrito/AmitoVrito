@@ -53,6 +53,7 @@ Production-grade async-native framework for RAG, agents, and graph workflows.
 
 [![GitHub Stars](https://img.shields.io/github/stars/SynapseKit/SynapseKit?style=flat-square&color=0a7bbd&label=stars)](https://github.com/SynapseKit/SynapseKit)
 [![PyPI](https://img.shields.io/pypi/v/synapsekit?style=flat-square&color=0a7bbd)](https://pypi.org/project/synapsekit/)
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/synapsekit?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/synapsekit)
 [![Issues](https://img.shields.io/github/issues/SynapseKit/SynapseKit?style=flat-square&color=22c55e)](https://github.com/SynapseKit/SynapseKit/issues)
 
 </td>
