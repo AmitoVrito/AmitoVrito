@@ -1,6 +1,6 @@
 <div align="center">
 
-[![SynapseKit](https://img.shields.io/badge/SynapseKit-22c55e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SynapseKit/SynapseKit)&nbsp;[![ChunkRank](https://img.shields.io/badge/ChunkRank-0f172a?style=for-the-badge&logo=github&logoColor=22c55e)](https://github.com/AmitoVrito/chunkrank)&nbsp;[![Engineers of AI](https://img.shields.io/badge/Engineers_of_AI-22c55e?style=for-the-badge)](https://www.engineersofai.com)&nbsp;[![PyPI](https://img.shields.io/badge/PyPI-3775A9?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/synapsekit/)
+[![SynapseKit](https://img.shields.io/badge/SynapseKit-22c55e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SynapseKit/SynapseKit)&nbsp;[![ChunkRank](https://img.shields.io/badge/ChunkRank-0f172a?style=for-the-badge&logo=pypi&logoColor=22c55e)](https://pypi.org/project/chunkrank/)&nbsp;[![Engineers of AI](https://img.shields.io/badge/Engineers_of_AI-22c55e?style=for-the-badge)](https://www.engineersofai.com)&nbsp;[![PyPI](https://img.shields.io/badge/PyPI-3775A9?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/synapsekit/)
 
 <sub>Ship fast. Keep it simple. Open source everything.</sub>
 
@@ -62,17 +62,17 @@ nautiverse:~$ systemctl status synapsekit --no-pager
 nautiverse:~$ systemctl status chunkrank --no-pager
 ```
 ```diff
-+ ● chunkrank.service — chunk ranking and scoring for RAG pipelines
++ ● chunkrank.service — model-aware chunking and answer re-ranking for LLM pipelines
 +      Loaded: loaded (/usr/local/lib/python3.12/site-packages/chunkrank)
-+      Active: ● active (starting)
++      Active: ● active (running)
 +    Main PID: 2 (python)
 +
-+   purpose    rank and score retrieved chunks before they hit the LLM context
-+              better signal, lower noise, fewer wasted tokens
-+   status     early development — watch the repo
++   purpose    automatically adapts chunk size to the model's tokenizer and
++              context window, then consolidates and ranks answers across chunks
++   version    v1.0.0
 ```
 
-[![GitHub](https://img.shields.io/badge/github-chunkrank-0f172a?style=flat-square&logo=github&logoColor=22c55e)](https://github.com/AmitoVrito/chunkrank)
+[![PyPI](https://img.shields.io/pypi/v/chunkrank?color=22c55e&label=pypi&logo=pypi&logoColor=white)](https://pypi.org/project/chunkrank/)&nbsp;[![Downloads](https://static.pepy.tech/personalized-badge/chunkrank?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/chunkrank)
 
 ---
 
@@ -96,7 +96,7 @@ RUN apt-get install -y \
 
 COPY ./experience        /prod/background/
 COPY ./synapsekit        /prod/flagship/
-COPY ./chunkrank         /prod/research/
+COPY ./chunkrank         /prod/tools/
 COPY ./engineers-of-ai   /prod/community/
 
 ENV MODE=production     \
@@ -123,7 +123,7 @@ CMD ["python", "-m", "ship_features", "--no-magic"]
 
 ```diff
 + LLM Infrastructure    →  RAG · streaming agents · graph workflows
-+ ChunkRank             →  chunk scoring and ranking · better RAG signal
++ ChunkRank             →  model-aware chunking · answer re-ranking across chunks
 + Cost intelligence     →  CostRouter · BudgetGuard · FallbackChain
 + EU Compliance         →  GDPR toolkit · EU AI Act risk classifier
 + Eval-driven dev       →  EvalCI · regression gates · synapsekit test
@@ -205,7 +205,7 @@ CAFFEINE=required
 * a936078  (tag: v1.4.2)                 SynapseKit v1.4.2 — 27 providers · 41 tools · 1450 tests
 * 3c4d5e6  (tag: v1.3.0)                 SynapseKit v1.3.0 — cost routing · eval CLI · MCP · A2A
 * 1a2b3c4  (tag: v2024.x)                AI infrastructure at scale — fintech & healthcare
-* 0000001  (tag: wip)                    ChunkRank — chunk scoring for RAG · early dev
+* c8f3a91  (tag: v1.0.0)                 ChunkRank v1.0.0 — model-aware chunking and answer re-ranking
 ```
 
 </details>
@@ -250,7 +250,7 @@ Events:
   2024-01-01  Normal  Started   synapsekit — first commit
   2025-01-01  Normal  Upgraded  synapsekit v1.3 — cost routing, eval CLI, MCP
   2026-03-31  Normal  Upgraded  synapsekit v1.4.6 — 27 providers, 9 vector stores, 1450 tests
-  2026-04-01  Normal  Started   chunkrank — chunk scoring for RAG pipelines
+  2026-04-01  Normal  Published chunkrank v1.0.0 — model-aware chunking and answer re-ranking
   2026-Q2     Normal  Building  synapsekit v1.5.0 — EU compliance platform
 ```
 
@@ -293,7 +293,7 @@ ENVIRONMENT
 
 FILES
        /prod/synapsekit         async-native Python LLM framework
-       /prod/chunkrank          chunk scoring and ranking for RAG
+       /prod/chunkrank          model-aware chunking and answer re-ranking
        /prod/engineers-of-ai    community platform for AI engineers
        /etc/experience          read-only
 
