@@ -1,6 +1,6 @@
 <div align="center">
 
-[![SynapseKit](https://img.shields.io/badge/SynapseKit-0a7bbd?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SynapseKit/SynapseKit)&nbsp;[![Engineers of AI](https://img.shields.io/badge/Engineers_of_AI-22c55e?style=for-the-badge)](https://www.engineersofai.com)&nbsp;[![PyPI](https://img.shields.io/badge/PyPI-3775A9?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/synapsekit/)
+[![SynapseKit](https://img.shields.io/badge/SynapseKit-22c55e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SynapseKit/SynapseKit)&nbsp;[![ChunkRank](https://img.shields.io/badge/ChunkRank-0f172a?style=for-the-badge&logo=github&logoColor=22c55e)](https://github.com/AmitoVrito/chunkrank)&nbsp;[![Engineers of AI](https://img.shields.io/badge/Engineers_of_AI-22c55e?style=for-the-badge)](https://www.engineersofai.com)&nbsp;[![PyPI](https://img.shields.io/badge/PyPI-3775A9?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/synapsekit/)
 
 <sub>Ship fast. Keep it simple. Open source everything.</sub>
 
@@ -39,20 +39,40 @@ nautiverse:~$ systemctl status synapsekit --no-pager
      Process: ExecStartPre=uv run pytest tests/ -q (code=exited, status=0/OK)
 +    Main PID: 1 (python)
 +
-+   providers  26  openai · anthropic · ollama · gemini · cohere · mistral
++   providers  27  openai · anthropic · ollama · gemini · cohere · mistral
 +                  bedrock · azure · groq · deepseek · openrouter · together
 +                  fireworks · cerebras · cloudflare · moonshot · perplexity
 +                  vertexai · zhipu · ai21 · databricks · baidu · llamacpp
-+                  minimax · alephalpha · huggingface
++                  minimax · alephalpha · huggingface · sambanova
 +   tools      41  calculator · python_repl · web_search · sql · http · shell
 +                  arxiv · pubmed · wolfram · wikipedia · tavily · brave ...
-+   loaders    17  pdf · html · csv · json · yaml · xml · discord · markdown
++   loaders    18  pdf · html · csv · json · yaml · xml · discord · gdrive
 +                  audio · video · excel · powerpoint · docx · web · dir ...
++   v.stores    9  inmemory · chroma · faiss · qdrant · pinecone · weaviate
++                  pgvector · milvus · lancedb
 +   hard deps   2  numpy · rank-bm25
-+   test suite  ✓  1403 passing
++   test suite  ✓  1450 passing
 ```
 
-[![PyPI](https://img.shields.io/pypi/v/synapsekit?color=0a7bbd&label=pypi&logo=pypi&logoColor=white)](https://pypi.org/project/synapsekit/)&nbsp;[![Downloads](https://static.pepy.tech/personalized-badge/synapsekit?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/synapsekit)&nbsp;[![Stars](https://img.shields.io/github/stars/SynapseKit/SynapseKit?style=flat-square&color=0a7bbd&label=stars)](https://github.com/SynapseKit/SynapseKit)&nbsp;[![Tests](https://img.shields.io/badge/tests-1403_passing-22c55e?logo=pytest&logoColor=white)]()
+[![PyPI](https://img.shields.io/pypi/v/synapsekit?color=22c55e&label=pypi&logo=pypi&logoColor=white)](https://pypi.org/project/synapsekit/)&nbsp;[![Downloads](https://static.pepy.tech/personalized-badge/synapsekit?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/synapsekit)&nbsp;[![Stars](https://img.shields.io/github/stars/SynapseKit/SynapseKit?style=flat-square&color=22c55e&label=stars)](https://github.com/SynapseKit/SynapseKit)&nbsp;[![Tests](https://img.shields.io/badge/tests-1450_passing-22c55e?logo=pytest&logoColor=white)]()
+
+---
+
+```bash
+nautiverse:~$ systemctl status chunkrank --no-pager
+```
+```diff
++ ● chunkrank.service — chunk ranking and scoring for RAG pipelines
++      Loaded: loaded (/usr/local/lib/python3.12/site-packages/chunkrank)
++      Active: ● active (starting)
++    Main PID: 2 (python)
++
++   purpose    rank and score retrieved chunks before they hit the LLM context
++              better signal, lower noise, fewer wasted tokens
++   status     early development — watch the repo
+```
+
+[![GitHub](https://img.shields.io/badge/github-chunkrank-0f172a?style=flat-square&logo=github&logoColor=22c55e)](https://github.com/AmitoVrito/chunkrank)
 
 ---
 
@@ -76,6 +96,7 @@ RUN apt-get install -y \
 
 COPY ./experience        /prod/background/
 COPY ./synapsekit        /prod/flagship/
+COPY ./chunkrank         /prod/research/
 COPY ./engineers-of-ai   /prod/community/
 
 ENV MODE=production     \
@@ -102,6 +123,7 @@ CMD ["python", "-m", "ship_features", "--no-magic"]
 
 ```diff
 + LLM Infrastructure    →  RAG · streaming agents · graph workflows
++ ChunkRank             →  chunk scoring and ranking · better RAG signal
 + Cost intelligence     →  CostRouter · BudgetGuard · FallbackChain
 + EU Compliance         →  GDPR toolkit · EU AI Act risk classifier
 + Eval-driven dev       →  EvalCI · regression gates · synapsekit test
@@ -177,10 +199,13 @@ CAFFEINE=required
 <br/>
 
 ```bash
-* a1b2c3d  (HEAD -> main, tag: v2026.1)  SynapseKit v1.5.0 — EU compliance platform WIP
-* 7f8e9ab  (tag: v2026.0)                SynapseKit v1.4.x — 26 providers · 41 tools · 1403 tests
-* 3c4d5e6  (tag: v2025.x)                SynapseKit v1.0→1.3 — cost routing · eval CLI · MCP · A2A
+* d8301c6  (HEAD -> main, tag: v1.4.6)   SynapseKit v1.4.6 — subgraph error handling
+* e1eb0df  (tag: v1.4.5)                 SynapseKit v1.4.5 — 9 vector stores
+* 7477bd9  (tag: v1.4.4)                 SynapseKit v1.4.4 — SambaNova, GoogleDrive
+* a936078  (tag: v1.4.2)                 SynapseKit v1.4.2 — 27 providers · 41 tools · 1450 tests
+* 3c4d5e6  (tag: v1.3.0)                 SynapseKit v1.3.0 — cost routing · eval CLI · MCP · A2A
 * 1a2b3c4  (tag: v2024.x)                AI infrastructure at scale — fintech & healthcare
+* 0000001  (tag: wip)                    ChunkRank — chunk scoring for RAG · early dev
 ```
 
 </details>
@@ -217,14 +242,16 @@ Containers:
 
 Volumes:
   /prod/synapsekit        ReadWriteMany
+  /prod/chunkrank         ReadWriteMany
   /prod/engineers-of-ai   ReadWriteMany
   /etc/experience         ReadOnly
 
 Events:
-  2024-01-01  Normal  Started   synapsekit v1.0 — first commit
+  2024-01-01  Normal  Started   synapsekit — first commit
   2025-01-01  Normal  Upgraded  synapsekit v1.3 — cost routing, eval CLI, MCP
-  2026-03-01  Normal  Upgraded  synapsekit v1.4.3 — 26 providers, 1403 tests
-  2026-03-30  Normal  Building  synapsekit v1.5.0 — EU compliance platform
+  2026-03-31  Normal  Upgraded  synapsekit v1.4.6 — 27 providers, 9 vector stores, 1450 tests
+  2026-04-01  Normal  Started   chunkrank — chunk scoring for RAG pipelines
+  2026-Q2     Normal  Building  synapsekit v1.5.0 — EU compliance platform
 ```
 
 </details>
@@ -247,12 +274,13 @@ SYNOPSIS
 
 DESCRIPTION
        Builds production infrastructure for LLM systems and open
-       sources it. Maintainer of SynapseKit. Founder of Engineers
-       of AI. Operates in production mode. No magic. No lock-in.
-       Two hard dependencies. Everything composable.
+       sources it. Maintainer of SynapseKit. Author of ChunkRank.
+       Founder of Engineers of AI. Operates in production mode.
+       No magic. No lock-in. Two hard dependencies. Everything
+       composable.
 
 OPTIONS
-       --oss          contribute to or use SynapseKit
+       --oss          contribute to or use SynapseKit / ChunkRank
        --consulting   AI strategy for regulated industries
        --collaborate  joint research or product work
        --hire         see /proc/self/focus for current bandwidth
@@ -264,7 +292,8 @@ ENVIRONMENT
        MODE=production    SHIPPING=true    MAGIC=false
 
 FILES
-       /prod/synapsekit         flagship open-source project
+       /prod/synapsekit         async-native Python LLM framework
+       /prod/chunkrank          chunk scoring and ranking for RAG
        /prod/engineers-of-ai    community platform for AI engineers
        /etc/experience          read-only
 
@@ -272,7 +301,7 @@ BUGS
        Occasionally ships too fast. Known issue. Won't fix.
 
 SEE ALSO
-       synapsekit(3), engineers-of-ai(7), pypi(1), github(1)
+       synapsekit(3), chunkrank(3), engineers-of-ai(7), pypi(1)
 
 AMITOVRITO(1)                  v2026.1                   AMITOVRITO(1)
 ```
@@ -302,5 +331,5 @@ nautiverse:~$ █
 ```
 
 <div align="center">
-<img src="https://komarev.com/ghpvc/?username=AmitoVrito&style=flat-square&color=0a7bbd&label=profile+views" />
+<img src="https://komarev.com/ghpvc/?username=AmitoVrito&style=flat-square&color=22c55e&label=profile+views" />
 </div>
