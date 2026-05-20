@@ -1,6 +1,6 @@
 <div align="center">
 
-[![SynapseKit](https://img.shields.io/badge/SynapseKit-22c55e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SynapseKit/SynapseKit)&nbsp;[![ChunkRank](https://img.shields.io/badge/ChunkRank-0f172a?style=for-the-badge&logo=pypi&logoColor=22c55e)](https://pypi.org/project/chunkrank/)&nbsp;[![Engineers of AI](https://img.shields.io/badge/Engineers_of_AI-22c55e?style=for-the-badge)](https://www.engineersofai.com)&nbsp;[![PyPI](https://img.shields.io/badge/PyPI-3775A9?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/synapsekit/)
+[![SynapseKit](https://img.shields.io/badge/SynapseKit-22c55e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SynapseKit/SynapseKit)&nbsp;[![ChunkRank](https://img.shields.io/badge/ChunkRank-0f172a?style=for-the-badge&logo=pypi&logoColor=22c55e)](https://pypi.org/project/chunkrank/)&nbsp;[![PyPI](https://img.shields.io/badge/PyPI-3775A9?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/synapsekit/)
 
 <sub>Ship fast. Keep it simple. Open source everything.</sub>
 
@@ -97,7 +97,6 @@ RUN apt-get install -y \
 COPY ./experience        /prod/background/
 COPY ./synapsekit        /prod/flagship/
 COPY ./chunkrank         /prod/tools/
-COPY ./engineers-of-ai   /prod/community/
 
 ENV MODE=production     \
     SHIPPING=true       \
@@ -177,7 +176,7 @@ CMD ["python", "-m", "ship_features", "--no-magic"]
 SHELL=/bin/zsh
 EDITOR=vim
 LANG=python3.12
-PATH=/prod:/oss:/research:/community
+PATH=/prod:/oss:/research
 MODE=production
 SHIPPING=always
 MAGIC=false
@@ -243,7 +242,6 @@ Containers:
 Volumes:
   /prod/synapsekit        ReadWriteMany
   /prod/chunkrank         ReadWriteMany
-  /prod/engineers-of-ai   ReadWriteMany
   /etc/experience         ReadOnly
 
 Events:
@@ -275,9 +273,8 @@ SYNOPSIS
 DESCRIPTION
        Builds production infrastructure for LLM systems and open
        sources it. Maintainer of SynapseKit. Author of ChunkRank.
-       Founder of Engineers of AI. Operates in production mode.
-       No magic. No lock-in. Two hard dependencies. Everything
-       composable.
+       Operates in production mode. No magic. No lock-in.
+       Two hard dependencies. Everything composable.
 
 OPTIONS
        --oss          contribute to or use SynapseKit / ChunkRank
@@ -294,35 +291,18 @@ ENVIRONMENT
 FILES
        /prod/synapsekit         async-native Python LLM framework
        /prod/chunkrank          model-aware chunking and answer re-ranking
-       /prod/engineers-of-ai    community platform for AI engineers
        /etc/experience          read-only
 
 BUGS
        Occasionally ships too fast. Known issue. Won't fix.
 
 SEE ALSO
-       synapsekit(3), chunkrank(3), engineers-of-ai(7), pypi(1)
+       synapsekit(3), chunkrank(3), pypi(1)
 
 AMITOVRITO(1)                  v2026.1                   AMITOVRITO(1)
 ```
 
 </details>
-
----
-
-```bash
-nautiverse:~$ cat /etc/community.d/engineers_of_ai.conf
-```
-```diff
-+ [unit]
-+ name        = Engineers of AI
-+ description = The network for engineers who ship AI at scale
-+ url         = https://www.engineersofai.com
-+
-+ [status]
-+ state       = active · growing
-+ role        = founder
-```
 
 ---
 
