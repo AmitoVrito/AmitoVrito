@@ -1,6 +1,6 @@
 <div align="center">
 
-[![SynapseKit](https://img.shields.io/badge/SynapseKit-22c55e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SynapseKit/SynapseKit)&nbsp;[![ChunkRank](https://img.shields.io/badge/ChunkRank-0f172a?style=for-the-badge&logo=pypi&logoColor=22c55e)](https://pypi.org/project/chunkrank/)&nbsp;[![PyPI](https://img.shields.io/badge/PyPI-3775A9?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/synapsekit/)
+[![SynapseKit](https://img.shields.io/badge/SynapseKit-22c55e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SynapseKit/SynapseKit)&nbsp;[![ChunkRank](https://img.shields.io/badge/ChunkRank-0f172a?style=for-the-badge&logo=pypi&logoColor=22c55e)](https://pypi.org/project/chunkrank/)&nbsp;[![Traceprop](https://img.shields.io/badge/Traceprop-0f172a?style=for-the-badge&logo=pypi&logoColor=22c55e)](https://pypi.org/project/traceprop/)&nbsp;[![PyPI](https://img.shields.io/badge/PyPI-3775A9?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/synapsekit/)
 
 <sub>Ship fast. Keep it simple. Open source everything.</sub>
 
@@ -76,6 +76,27 @@ nautiverse:~$ systemctl status chunkrank --no-pager
 
 ---
 
+```bash
+nautiverse:~$ systemctl status traceprop --no-pager
+```
+```diff
++ ● traceprop.service — computation-level data lineage, gradient attribution and unlearning
++      Loaded: loaded (/usr/local/lib/python3.12/site-packages/traceprop)
++      Active: ● active (running)
++    Main PID: 3 (python)
++
++   attribution  LDS 0.976 (Covertype 50K) · 0.884 (Adult Income) · CPU-only, no GPU
++   unlearning   >100% gap-closed on real data · provenance-guided gradient correction
++   compliance   EU AI Act Article 26 audit trail · structured JSON export
++   backends     numpy · pytorch · jax
++   paper        submitted · Proceedings of the VLDB Endowment Vol. 20 (VLDB 2027)
++   version      v0.6.0
+```
+
+[![PyPI](https://img.shields.io/pypi/v/traceprop?color=22c55e&label=pypi&logo=pypi&logoColor=white)](https://pypi.org/project/traceprop/)&nbsp;[![Downloads](https://static.pepy.tech/personalized-badge/traceprop?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/traceprop)&nbsp;[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20035922.svg)](https://doi.org/10.5281/zenodo.20035922)
+
+---
+
 <details>
 <summary><code>nautiverse:~$ cat Dockerfile</code></summary>
 <br/>
@@ -97,6 +118,7 @@ RUN apt-get install -y \
 COPY ./experience        /prod/background/
 COPY ./synapsekit        /prod/flagship/
 COPY ./chunkrank         /prod/tools/
+COPY ./traceprop         /prod/research/
 
 ENV MODE=production     \
     SHIPPING=true       \
@@ -123,6 +145,7 @@ CMD ["python", "-m", "ship_features", "--no-magic"]
 ```diff
 + LLM Infrastructure    →  RAG · streaming agents · graph workflows
 + ChunkRank             →  model-aware chunking · answer re-ranking across chunks
++ Traceprop             →  data lineage · gradient attribution · unlearning · VLDB 2027
 + Cost intelligence     →  CostRouter · BudgetGuard · FallbackChain
 + EU Compliance         →  GDPR toolkit · EU AI Act risk classifier
 + Eval-driven dev       →  EvalCI · regression gates · synapsekit test
@@ -205,6 +228,7 @@ CAFFEINE=required
 * 3c4d5e6  (tag: v1.3.0)                 SynapseKit v1.3.0 — cost routing · eval CLI · MCP · A2A
 * 1a2b3c4  (tag: v2024.x)                AI infrastructure at scale — fintech & healthcare
 * c8f3a91  (tag: v1.0.0)                 ChunkRank v1.0.0 — model-aware chunking and answer re-ranking
+* 4d17279  (tag: v0.6.0)                 Traceprop v0.6.0 — lineage · attribution · unlearning · VLDB 2027
 ```
 
 </details>
@@ -242,6 +266,7 @@ Containers:
 Volumes:
   /prod/synapsekit        ReadWriteMany
   /prod/chunkrank         ReadWriteMany
+  /prod/traceprop         ReadWriteMany
   /etc/experience         ReadOnly
 
 Events:
@@ -249,6 +274,7 @@ Events:
   2025-01-01  Normal  Upgraded  synapsekit v1.3 — cost routing, eval CLI, MCP
   2026-03-31  Normal  Upgraded  synapsekit v1.4.6 — 27 providers, 9 vector stores, 1450 tests
   2026-04-01  Normal  Published chunkrank v1.0.0 — model-aware chunking and answer re-ranking
+  2026-05-20  Normal  Published traceprop v0.6.0 — data lineage, attribution, unlearning
   2026-Q2     Normal  Building  synapsekit v1.5.0 — EU compliance platform
 ```
 
@@ -273,11 +299,11 @@ SYNOPSIS
 DESCRIPTION
        Builds production infrastructure for LLM systems and open
        sources it. Maintainer of SynapseKit. Author of ChunkRank.
-       Operates in production mode. No magic. No lock-in.
-       Two hard dependencies. Everything composable.
+       Author of Traceprop. Operates in production mode. No magic.
+       No lock-in. Everything composable.
 
 OPTIONS
-       --oss          contribute to or use SynapseKit / ChunkRank
+       --oss          contribute to or use SynapseKit / ChunkRank / Traceprop
        --consulting   AI strategy for regulated industries
        --collaborate  joint research or product work
        --hire         see /proc/self/focus for current bandwidth
@@ -291,13 +317,14 @@ ENVIRONMENT
 FILES
        /prod/synapsekit         async-native Python LLM framework
        /prod/chunkrank          model-aware chunking and answer re-ranking
+       /prod/traceprop          data lineage, gradient attribution, unlearning
        /etc/experience          read-only
 
 BUGS
        Occasionally ships too fast. Known issue. Won't fix.
 
 SEE ALSO
-       synapsekit(3), chunkrank(3), pypi(1)
+       synapsekit(3), chunkrank(3), traceprop(3), pypi(1)
 
 AMITOVRITO(1)                  v2026.1                   AMITOVRITO(1)
 ```
