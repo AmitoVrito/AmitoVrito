@@ -6,10 +6,10 @@ I design and open-source AI systems: the frameworks people build LLM
 apps on, the retrieval that makes those apps accurate, and the research
 that keeps the underlying models honest and accountable.
 
-Everything I ship is plain Python, readable in an afternoon. No magic,
-no lock-in, no SaaS in the loop. I work on the boring, load-bearing
-parts of the stack: abstractions you can trust precisely because you
-can see straight through them, and delete when you outgrow them.
+Everything I ship is plain Python, readable in an afternoon. I work on
+the boring, load-bearing parts of the stack: abstractions you can trust
+precisely because you can see straight through them, and delete when you
+outgrow them.
 
 
 FRAMEWORKS
