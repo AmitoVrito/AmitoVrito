@@ -35,7 +35,7 @@ RESEARCH
 
 
 stack     Python · TypeScript · PyTorch · async everything
-stealth   building something new. more soon.
+stealth   building the next one. quiet for now.
 ethos     the best abstraction is the one you can delete
 
 // reach me: open an issue or discussion on any repo; I read them
