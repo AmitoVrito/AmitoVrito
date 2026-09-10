@@ -34,8 +34,9 @@ RESEARCH
                → in progress, targeting NeurIPS 2026 main track
 
 
-stack   Python · TypeScript · PyTorch · async everything
-ethos   the best abstraction is the one you can delete
+stack     Python · TypeScript · PyTorch · async everything
+stealth   building something new. more soon.
+ethos     the best abstraction is the one you can delete
 
 // reach me: open an issue or discussion on any repo; I read them
 </pre>
