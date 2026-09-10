@@ -30,7 +30,8 @@ RESEARCH
                EU AI Act audit trail, CPU-only (numpy, torch, jax).
                → paper submitted to MLSys · <a href="https://pypi.org/project/traceprop/">pypi</a> · <a href="https://doi.org/10.5281/zenodo.20035922">doi</a>
 
-  BehaviorTrace  trajectory provenance for emergent behaviors in RL-fine-tuned LLMs (in progress).
+  BehaviorTrace  trajectory provenance for emergent behaviors in RL-fine-tuned LLMs.
+               → in progress, targeting NeurIPS 2026 workshop
 
 
 stack   Python · TypeScript · PyTorch · async everything
