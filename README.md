@@ -2,15 +2,33 @@
 AMITOVRITO
 Senior AI Specialist · Technical PM · Founder
 
-I build production infrastructure for LLM systems and open-source it.
+I design and open-source AI systems —
+frameworks, retrieval, and the research behind them.
+
 No magic. No lock-in. Plain Python.
 
-  building   <a href="https://github.com/SynapseKit/SynapseKit">SynapseKit</a>   async-native Python framework for LLM apps — RAG, agents, graph workflows
-  building   <a href="https://pypi.org/project/chunkrank/">ChunkRank</a>    model-aware chunking + cross-chunk answer re-ranking
-  research   <a href="https://pypi.org/project/traceprop/">Traceprop</a>    data lineage · gradient attribution · machine unlearning — VLDB 2027
 
-  stack      Python · TypeScript · PyTorch · async everything
-  ethos      the best abstraction is the one you can delete
+FRAMEWORKS
+  <a href="https://github.com/SynapseKit/SynapseKit">SynapseKit</a>   async-native Python framework for building with LLMs
+               RAG · tool-using agents · graph workflows · streaming-first
+               two hard dependencies, 100% typed, transparent top to bottom
+               → <a href="https://github.com/SynapseKit/SynapseKit">github.com/SynapseKit</a> · <a href="https://pypi.org/project/synapsekit/">pypi</a>
 
-  // reach me — open an issue or discussion on any repo; I read them
+RETRIEVAL
+  <a href="https://pypi.org/project/chunkrank/">ChunkRank</a>    model-aware chunking + cross-chunk answer re-ranking
+               sizes chunks to the model's own tokenizer and context window,
+               then consolidates and ranks answers across the chunks
+               → <a href="https://pypi.org/project/chunkrank/">pypi</a>
+
+RESEARCH
+  <a href="https://pypi.org/project/traceprop/">Traceprop</a>    computation-level data lineage, gradient attribution,
+               and machine unlearning — provenance-guided gradient
+               correction, EU AI Act audit trail, CPU-only (numpy·torch·jax)
+               → paper submitted, VLDB 2027 · <a href="https://pypi.org/project/traceprop/">pypi</a> · <a href="https://doi.org/10.5281/zenodo.20035922">doi</a>
+
+
+stack   Python · TypeScript · PyTorch · async everything
+ethos   the best abstraction is the one you can delete
+
+// reach me — open an issue or discussion on any repo; I read them
 </pre>
